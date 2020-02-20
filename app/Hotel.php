@@ -18,5 +18,7 @@ class Hotel extends Model
         'created_at',
         'updated_at',
     ];
-    
+    public function country() {
+        $this->belongsTo(Country::class);
+    }
 }
